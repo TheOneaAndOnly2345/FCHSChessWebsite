@@ -14,33 +14,29 @@ const Achievements = () => {
   const achievements = [
     {
       year: "2025",
-      title: "Georgia High School Championship",
-      description: "Placed 3rd in the Georgia State Team Championship",
-      type: "championship",
+      title: "Georgia High School Team State Championship",
+      description: "Joint 3rd Place High School Team",
       icon: Users,
       img: achievement2Img,
     },
     {
       year: "2025",
       title: "Georgia State MLK Tournament",
-      description: "Placed 2nd in the Georgia State MLK Tournament",
-      type: "championship",
+      description: "2nd Place High School Team",
       icon: Trophy,
       img: achievement1Img,
     },
     {
       year: "2024",
       title: "Georgia State MLK Tournament",
-      description: "Placed 1st in the Georgia State MLK Tournament",
-      type: "championship",
+      description: "1st Place High School Team",
       icon: Star,
       img: achievement3Img,
     },
     {
       year: "2023",
       title: "Georgia State MLK Tournament",
-      description: "Placed 1st in the Georgia State MLK Tournament",
-      type: "championship",
+      description: "1st Place High School Team",
       icon: Medal,
       img: achievement4Img,
     },
@@ -100,9 +96,6 @@ const Achievements = () => {
           {/* Title + Badge */}
           <div className="flex items-center justify-center flex-wrap gap-3 mb-4">
             <h3 className="font-semibold text-2xl text-white">{ach.title}</h3>
-            <Badge className="bg-club-red/20 text-club-red border-club-red/30">
-              {ach.type}
-            </Badge>
           </div>
 
           {/* Description */}

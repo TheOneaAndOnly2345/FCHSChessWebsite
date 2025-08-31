@@ -8,8 +8,6 @@ import fight from "@/assets/randomtrophy.png";
 import compete from "@/assets/right.png";
 import build from "@/assets/haircut.png";
 
-// Example images for feature cards (replace with your own)
-
 const Home = () => {
   return (
     <main className="min-h-screen bg-club-black text-white">
@@ -32,13 +30,19 @@ const Home = () => {
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
             Strategic Minds, Stronger Futures.
           </p>
+
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-club-red hover:bg-red-700 shadow-lg">
-              <Link to="/about">Learn More</Link>
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-club-black">
-              <Link to="/achievements">View Achievements</Link>
-            </Button>
+            <Link to="/about" className="w-full sm:w-auto">
+              <Button size="lg" className="bg-club-red hover:bg-red-700 shadow-lg w-full">
+                Learn More
+              </Button>
+            </Link>
+            <Link to="/achievements" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-club-black w-full">
+                View Achievements
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -46,7 +50,9 @@ const Home = () => {
       {/* Features Section */}
       <section className="py-16 px-4 bg-club-black">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">Why Join FCHS Chess Club?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">
+            Why Join FCHS Chess Club?
+          </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Feature 1 */}

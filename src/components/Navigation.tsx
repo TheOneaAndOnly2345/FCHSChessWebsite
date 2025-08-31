@@ -26,7 +26,7 @@ const Navigation = () => {
                 className="h-10 w-auto" 
               />
             </Link>
-            <span className="text-xl font-bold text-white">FCHS Chess Club</span>
+            <span className="text-xl font-bold text-white">Forsyth Central Chess Club</span>
           </div>
           
           {/* Navigation Links */}

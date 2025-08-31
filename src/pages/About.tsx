@@ -115,7 +115,7 @@ const About = () => {
       {/* Text */}
       <h4 className="text-2xl font-bold text-primary">Tryout for the Competitive Team</h4>
       <p className="text-muted-foreground mt-3 text-lg">
-        Showcase your skills and represent our school in tournament. Tryouts are in October!
+        Showcase your skills and represent our school in tournaments. Tryouts are in October!
       </p>
     </CardContent>
   </Card>
