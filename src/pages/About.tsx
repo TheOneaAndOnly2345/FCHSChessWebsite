@@ -122,31 +122,31 @@ const About = () => {
 </div>
 
         {/* What We Offer */}
-        <Card className="bg-gradient-to-r from-primary/5 to-accent/5">
-          <CardContent className="p-8">
-            <h2 className="text-2xl font-bold mb-6 text-center">What We Offer</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="font-semibold mb-3">For Beginners:</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Basic rules and piece movement</li>
-                  <li>• Opening principles and tactics</li>
-                  <li>• Friendly practice games</li>
-                  <li>• Mentorship from experienced players</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-3">For Advanced Players:</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Tournament preparation</li>
-                  <li>• Advanced strategy sessions</li>
-                  <li>• Competitive team events</li>
-                  <li>• Leadership opportunities</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+<Card className="bg-gradient-to-r from-primary/5 to-accent/5">
+  <CardContent className="p-8">
+    <h2 className="text-2xl font-bold mb-6 text-center">What We Offer</h2>
+    <div className="grid md:grid-cols-2 gap-6">
+      <div>
+        <h3 className="font-semibold mb-3 text-center">For Beginners:</h3>
+        <ul className="space-y-2 text-muted-foreground text-center list-disc list-inside">
+          <li>Basic rules and piece movement</li>
+          <li>Opening principles and tactics</li>
+          <li>Friendly practice games</li>
+          <li>Mentorship from experienced players</li>
+        </ul>
+      </div>
+      <div>
+        <h3 className="font-semibold mb-3 text-center">For Advanced Players:</h3>
+        <ul className="space-y-2 text-muted-foreground text-center list-disc list-inside">
+          <li>Tournament preparation</li>
+          <li>Advanced strategy sessions</li>
+          <li>Competitive team events</li>
+          <li>Leadership opportunities</li>
+        </ul>
+      </div>
+    </div>
+  </CardContent>
+</Card>
       </div>
     </main>
   );
