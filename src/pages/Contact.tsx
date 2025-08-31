@@ -31,7 +31,7 @@ const Contact = () => {
     setStatus("Sending...");
 
     const form = new FormData();
-    form.append("access_key", "4193d627-82a3-4818-813e-be04eef2678f"); // ⬅️ replace with Chess Club Web3Forms key
+    form.append("access_key", process.env.REACT_APP_WEB3FORMS_KEY || ""); // ⬅️ replace with Chess Club Web3Forms key
     form.append("name", formData.name);
     form.append("email", formData.email);
     form.append("subject", formData.subject);
