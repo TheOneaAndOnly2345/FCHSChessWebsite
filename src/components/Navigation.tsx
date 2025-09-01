@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import ChessLogo from "@/assets/chesslogo.png";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -38,31 +37,28 @@ const Navigation = () => {
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-1">
             {navItems.map((item) => (
-              <Button
+              <Link
                 key={item.path}
-                variant={location.pathname === item.path ? "default" : "ghost"}
-                asChild
-                className={`font-medium ${
+                to={item.path}
+                className={`px-4 py-2 rounded-md font-medium ${
                   location.pathname === item.path
                     ? "bg-club-red text-white"
                     : "text-gray-300 hover:text-white hover:bg-club-red/20"
                 }`}
               >
-                <Link to={item.path}>{item.name}</Link>
-              </Button>
+                {item.name}
+              </Link>
             ))}
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
+            <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white"
+              className="text-white p-2 rounded-md hover:bg-club-red/20 focus:outline-none"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </Button>
+            </button>
           </div>
         </div>
       </div>
@@ -75,7 +71,7 @@ const Navigation = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="md:hidden bg-club-black border-t border-club-red/30 overflow-hidden"
+            className="md:hidden bg-club-black border-t border-club-red/30 overflow-hidden z-50"
           >
             <div className="flex flex-col px-4 py-2 space-y-2">
               {navItems.map((item) => (
@@ -87,7 +83,7 @@ const Navigation = () => {
                       ? "bg-club-red text-white"
                       : "text-gray-300 hover:text-white hover:bg-club-red/20"
                   }`}
-                  onClick={() => setIsOpen(false)} // close menu on click
+                  onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </Link>
